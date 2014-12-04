@@ -1,0 +1,19 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker info
+    - docker build -t brownman/runner3 .
+    
+test:
+  override:
+     - echo override goes here
+     - docker run brownman/runner1 sudo -u gitlab_ci_runner -H 'nvm ls; nvm install 0.10; nvm use 0.10'
+
+deployment:
+  hub:
+    branch: master
+    commands:
+       - echo deployment goes here
