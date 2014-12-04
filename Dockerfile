@@ -36,6 +36,7 @@ ADD authorized_keys /root/.ssh/
 RUN chmod 700 /root/.ssh && chmod 600 /root/.ssh/authorized_keys && chown root:root -R /root/.ssh
 
 EXPOSE 22
-RUN bash -c 'env' > $CIRCLE_ARTIFACTS/env.txt
+RUN touch $CIRCLE_ARTIFACTS/env.txt
+RUN env > $CIRCLE_ARTIFACTS/env.txt
 ENTRYPOINT ["/app/init"]
 CMD ["app:start"]
