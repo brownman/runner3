@@ -1,3 +1,9 @@
+[ERR?](https://registry.hub.docker.com/u/brownman/runner3/builds_history/93178/
+)
+[![Build Status](https://travis-ci.org/brownman/runner3.svg)](https://travis-ci.org/brownman/runner3)
+[![Circle CI](https://circleci.com/gh/brownman/runner3.svg?style=svg)](https://circleci.com/gh/brownman/runner3)
+
+
 # Table of Contents
 - [Introduction](#introduction)
     - [Version](#version)
