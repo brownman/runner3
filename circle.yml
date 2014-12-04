@@ -10,8 +10,8 @@ dependencies:
 test:
   override:
      - echo override goes here
-     - docker run brownman/runner3 sudo -u gitlab_ci_runner -H 'env' > /tmp/env.txt
-     - cp /tmp/env.txt $CIRCLE_ARTIFACTS/env.txt
+     - chmod u+x ./circle.sh
+     - bash -c ./circle.sh
 
 
 deployment:
