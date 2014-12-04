@@ -1,4 +1,4 @@
-FROM ubuntu:12.04
+FROM brownman:runner2
 MAINTAINER sameer@damagehead.com
 
 RUN sed 's/main$/main universe/' -i /etc/apt/sources.list
