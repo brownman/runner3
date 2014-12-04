@@ -5,6 +5,7 @@ machine:
 dependencies:
   override:
     - docker info
+    - docker pull brownman/runner2
     - docker build -t brownman/runner3 .
     
 test:
