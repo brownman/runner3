@@ -1,4 +1,4 @@
-FROM brownman:runner2:latest
+FROM brownman/runner2:latest
 MAINTAINER sameer@damagehead.com
 
 
