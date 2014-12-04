@@ -6,7 +6,7 @@ RUN sed 's/main$/main universe/' -i /etc/apt/sources.list
 RUN apt-get update # 20140310
 
 # essentials
-RUN apt-get install -y vim curl wget sudo net-tools pwgen && \
+RUN apt-get install -y curl wget sudo net-tools pwgen && \
 	apt-get install -y logrotate supervisor openssh-server && \
 	apt-get clean
 
