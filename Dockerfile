@@ -1,4 +1,4 @@
-FROM brownman/install_config_test
+FROM brownman/install-config-test
 #ubuntu:12.04
 MAINTAINER sameer@damagehead.com
 
