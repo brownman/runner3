@@ -1,4 +1,5 @@
-FROM ubuntu:12.04
+FROM brownman/install_config_test
+#ubuntu:12.04
 MAINTAINER sameer@damagehead.com
 
 RUN sed 's/main$/main universe/' -i /etc/apt/sources.list
